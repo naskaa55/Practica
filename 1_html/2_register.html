@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../2_css/2_register.css">
+</head>
+<body>
+    <main class="register-page">
+        <h1>Регистрация</h1>
+
+        <form id="register-form" method="POST" action="#" novalidate>
+            <div class="field">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required
+                       pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+            </div>
+
+            <div class="field">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required minlength="6">
+            </div>
+
+            <div class="field">
+                <label for="password2">Повторите пароль</label>
+                <input type="password" id="password2" name="password2" required>
+            </div>
+
+            <div class="field">
+                <label for="birth">Дата рождения</label>
+                <input type="date" id="birth" name="birth" required>
+            </div>
+
+            <fieldset>
+                <legend>Пол</legend>
+                <label><input type="radio" name="gender" value="m" required> Мужской</label>
+                <label><input type="radio" name="gender" value="f"> Женский</label>
+            </fieldset>
+
+            <div class="field checkbox">
+                <label>
+                    <input type="checkbox" name="agree" required>
+                    Я согласен с условиями
+                </label>
+            </div>
+
+            <div id="errors" class="errors"></div>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </main>
+
+    <script src="../3_js/2_register.js"></script>
+</body>
+</html>

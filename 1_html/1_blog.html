@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой блог</title>
+    <link rel="stylesheet" href="../2_css/1_blog.css">
+</head>
+<body>
+    <header>
+        <h1>Мой блог</h1>
+        <nav>
+            <a href="#" class="active">Главная</a>
+            <a href="#about">О себе</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <input type="search" id="search" placeholder="Поиск по постам...">
+        <button id="theme-toggle">Тема</button>
+    </header>
+
+    <main>
+        <section class="content">
+            <section id="hello">
+                <h2>Привет!</h2>
+                <p>Это личный блог о программировании и жизни.</p>
+            </section>
+
+            <section id="posts">
+                <h2>Последние посты</h2>
+                <ul class="posts-list">
+                    <li>
+                        <article>
+                            <img src="https://picsum.photos/id/1/200/120" alt="Картинка к посту" loading="lazy">
+                            <h3>Первый пост</h3>
+                            <p>Краткое описание первого поста.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="https://picsum.photos/id/2/200/120" alt="Картинка к посту" loading="lazy">
+                            <h3>HTML для новичков</h3>
+                            <p>Основы HTML за 10 минут.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="https://picsum.photos/id/3/200/120" alt="Картинка к посту" loading="lazy">
+                            <h3>CSS Grid</h3>
+                            <p>Что такое CSS Grid и как его использовать.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="https://picsum.photos/id/4/200/120" alt="Картинка к посту" loading="lazy">
+                            <h3>JavaScript события</h3>
+                            <p>Как работают события в JS.</p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <aside>
+            <h3>Категории</h3>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">SQL</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Мой блог. Все права защищены.</p>
+    </footer>
+
+    <script src="../3_js/1_blog.js"></script>
+</body>
+</html>

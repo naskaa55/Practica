@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="../2_css/4_todo.css">
+</head>
+<body>
+    <main class="todo-app">
+        <h1>Список задач</h1>
+
+        <div class="add-form">
+            <input type="text" id="task-input" placeholder="Новая задача...">
+            <button id="add-btn">Добавить</button>
+        </div>
+
+        <fieldset class="filters">
+            <legend>Фильтр</legend>
+            <label><input type="radio" name="filter" value="all" checked> Все</label>
+            <label><input type="radio" name="filter" value="active"> Активные</label>
+            <label><input type="radio" name="filter" value="done"> Завершённые</label>
+        </fieldset>
+
+        <ul id="task-list" class="tasks"></ul>
+
+        <p class="counter">Активных задач: <span id="counter">0</span></p>
+    </main>
+
+    <script src="../3_js/4_todo.js"></script>
+</body>
+</html>

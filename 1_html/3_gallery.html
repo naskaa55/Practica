@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="../2_css/3_gallery.css">
+</head>
+<body>
+    <header>
+        <h1>Галерея изображений</h1>
+    </header>
+
+    <section class="gallery">
+        <figure>
+            <img src="https://picsum.photos/id/10/300/200"
+                 data-full="https://picsum.photos/id/10/1200/800"
+                 alt="Горы" loading="lazy">
+            <figcaption>Горный пейзаж</figcaption>
+        </figure>
+        <figure>
+            <img src="https://picsum.photos/id/1018/300/200"
+                 data-full="https://picsum.photos/id/1018/1200/800"
+                 alt="Море" loading="lazy">
+            <figcaption>Море и закат</figcaption>
+        </figure>
+        <figure>
+            <img src="https://picsum.photos/id/1019/300/200"
+                 data-full="https://picsum.photos/id/1019/1200/800"
+                 alt="Город" loading="lazy">
+            <figcaption>Город ночью</figcaption>
+        </figure>
+        <figure>
+            <img src="https://picsum.photos/id/1025/300/200"
+                 data-full="https://picsum.photos/id/1025/1200/800"
+                 alt="Кот" loading="lazy">
+            <figcaption>Котик</figcaption>
+        </figure>
+        <figure>
+            <img src="https://picsum.photos/id/1028/300/200"
+                 data-full="https://picsum.photos/id/1028/1200/800"
+                 alt="Собака" loading="lazy">
+            <figcaption>Собака</figcaption>
+        </figure>
+        <figure>
+            <img src="https://picsum.photos/id/1015/300/200"
+                 data-full="https://picsum.photos/id/1015/1200/800"
+                 alt="Лес" loading="lazy">
+            <figcaption>Лес</figcaption>
+        </figure>
+    </section>
+
+    <div id="modal" class="modal hidden">
+        <button id="modal-close" class="modal-close">×</button>
+        <button id="modal-prev" class="modal-nav prev">&larr;</button>
+        <img id="modal-img" src="" alt="">
+        <button id="modal-next" class="modal-nav next">&rarr;</button>
+    </div>
+
+    <script src="../3_js/3_gallery.js"></script>
+</body>
+</html>
